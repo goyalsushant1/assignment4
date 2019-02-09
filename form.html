@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML FORM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="form_style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">TO THE NEW</div>
+            <div class="header-right">
+                <a href="">Home</a>
+                <a href="">Quick Help</a>
+            </div>
+        </div>
+    </header>
+    <div class="outer">
+        <div class="inner-1">
+            <div class="bug-report">
+                Bug Report
+            </div>
+        </div>
+        <div class="outer-inner-2">
+            <div class="inner-2">
+                <label>Title:*</label>
+                <input type="text" name="title" required>
+                <label>Description:*</label>
+                <textarea rows="4" cols="42" name="description" required></textarea>
+                <label>Operating System:</label>
+                <select>
+                    <option> Windows</option>
+                    <option> Linux</option>
+                    <option> Ubuntu</option>
+                    <option> Mac</option>
+                </select>
+                <label>Product:</label>
+                <select required="required">
+                    <option> Formoid </option>
+                    <option> Option 2 </option>
+                    <option> Option 3 </option>
+                    <option> Option 4 </option>
+                </select>
+                <label>Version:*</label>
+                <input type="text" name="version" required>
+                <label>License:</label>
+                <form id="radio">
+                    <input type="radio" name="license" value="free" id="free" />
+                    <label for="free">Free</label>
+                    <input type="radio" name="license" value="business" id="business" style="margin-left: 35%" />
+                    <label for="business">Business</label>
+                </form>
+                <label>Severity:</label>
+                <select required="required">
+                    <option>Critical</option>
+                    <option>Mild</option>
+                </select>
+                <label>Attachments:</label>
+                <form>
+                    <input type="text" placeholder=" No Files selected" />
+                    <input type="button" value="Choose File" />
+                </form>
+            </div>
+        </div>
+        <div class="inner-3">
+            <input type="button" value="Send">
+        </div>
+    </div>
+</body>
+
+</html>

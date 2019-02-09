@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <style>
+        table{
+            font-family: sans-serif;
+            width: 100%;
+            text-align: center;
+            background: blue;
+        }
+        td,th{
+            border: 2px solid gray;
+            padding: 5px;
+        }
+        tr:nth-child(even){
+            background: skyblue;
+        }
+        tr:nth-child(odd){
+            background:lightgray;
+        }
+
+        th{
+            background: pink;
+        }
+        tfoot td{
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Employee Name</th>
+                <th>Designation</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>ID</td>
+                <td>Employee Name</td>
+                <td>Designation</td>
+                <td>Department</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Sushant</td>
+                <td>Software Developer</td>
+                <td>Information Technology</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Raghav</td>
+                <td>Backend Developer</td>
+                <td>Information Technology</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Rahul</td>
+                <td>Frontend Developer</td>
+                <td>Information Technology</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Vaibhav</td>
+                <td>MEAN Stack</td>
+                <td>Information Technology</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Nishant</td>
+                <td>Full Stack Developer</td>
+                <td>Information Technology</td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>Sawarnee</td>
+                <td>Java Developer</td>
+                <td>Information Technology</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
